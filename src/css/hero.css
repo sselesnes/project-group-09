@@ -7,6 +7,8 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
+  min-width: 320px;
+  max-width: 375px;
 }
 
 .hero-title {
@@ -16,7 +18,6 @@
   letter-spacing: -0.02em;
   color: #0c0c0c;
   max-width: 335px;
-  margin-bottom: 40px;
 }
 
 .hero-descr {
@@ -32,12 +33,37 @@
   color: #3350e9;
 }
 
+.hero-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .hero-list {
   display: flex;
+  position: relative;
 }
 
 .pics-and-scroll {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+
+.hero-ethan {
+  position: absolute;
+  left: 32px;
+}
+
+.hero-fleur {
+  position: absolute;
+  left: 64px;
+}
+
+.hero-anchor {
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #0c0c0c;
 }
