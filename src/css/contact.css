@@ -1,3 +1,175 @@
-.contact {
-  background-color: #888;
+/* ---------- Мобилка ---------- */
+.contact-us_title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+}
+
+.first-part-container {
+  background-color: #f3f3f3;
+  max-width: 335px;
+  height: 512px;
+  border-radius: 30px;
+  padding: 48px 24px;
+  margin-bottom: 20px;
+}
+
+.contact-us_text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+  width: 279px;
+  margin-bottom: 28px;
+}
+
+/* .contact-us_form {
+} */
+
+.form-input-person {
+  width: 100%;
+  height: 42px;
+  padding: 0 14px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(12, 12, 12, 0.15);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+
+  margin-bottom: 18px;
+}
+
+.form-input-person::placeholder {
+  /* font-family: 'Gilroy', sans-serif; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #0c0c0c;
+}
+
+.form-person-comment {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #0c0c0c;
+  width: 100%;
+  height: 84px;
+  padding: 12px 14px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(12, 12, 12, 0.15);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+  margin-bottom: 28px;
+  resize: none;
+}
+
+.form-input-person:focus,
+.form-person-comment:focus {
+  border: 1px solid #3350e9;
+}
+
+.contact-us_btn {
+  width: 134px;
+  height: 42px;
+  border-radius: 16px;
+  border: none;
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #3350e9;
+}
+
+.btn-text {
+  /* font-family: 'Gilroy', sans-serif; */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #fbfbfb;
+}
+
+.contact-us_btn:hover,
+.contact-us_btn:focus {
+  background-color: #1f3cd4;
+}
+
+.second-part-container {
+  width: 335px;
+  height: 512px;
+  border-radius: 30px;
+  background-color: black;
+}
+
+/* ---------- Планшет ---------- */
+@media only screen and (min-width: 768px) {
+  .contact-us_title {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+
+  .first-part-container {
+    max-width: 704px;
+    height: 556px;
+    border-radius: 50px;
+    padding: 50px 122px;
+    margin-bottom: 40px;
+  }
+
+  .contact-us_text {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 460px;
+    margin-bottom: 32px;
+  }
+
+  .form-input-person {
+    height: 52px;
+    padding: 0 18px;
+  }
+
+  .form-person-comment {
+    height: 90px;
+    margin-bottom: 32px;
+  }
+
+  .contact-us_btn {
+    width: 160px;
+    height: 52px;
+  }
+
+  .second-part-container {
+    width: 704px;
+    height: 556px;
+    border-radius: 50px;
+  }
+}
+
+/* ---------- Десктоп ---------- */
+@media only screen and (min-width: 1280px) {
+  .contact-us_container {
+    padding: 100px 65px 0;
+  }
+
+  .contact-us_title {
+    line-height: 0.91;
+  }
+
+  .contact-us_info {
+    display: flex;
+    gap: 40px;
+  }
+
+  .first-part-container {
+    width: 580px;
+    padding: 50px 60px;
+    margin: 0;
+  }
+
+  .second-part-container {
+    width: 530px;
+  }
 }
