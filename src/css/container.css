@@ -9,11 +9,18 @@
   padding-top: 0;
 }
 
+.footer .container {
+  padding-bottom: 20px;
+}
+
 /* Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 80px 32px 0;
+  }
+  .footer .container {
+    padding-bottom: 32px;
   }
 }
 
