@@ -97,13 +97,6 @@
   background-color: #1f3cd4;
 }
 
-.second-part-container {
-  width: 335px;
-  height: 512px;
-  border-radius: 30px;
-  background-color: black;
-}
-
 /* ---------- Планшет ---------- */
 @media only screen and (min-width: 768px) {
   .contact-us_title {
@@ -140,12 +133,6 @@
     width: 160px;
     height: 52px;
   }
-
-  .second-part-container {
-    width: 704px;
-    height: 556px;
-    border-radius: 50px;
-  }
 }
 
 /* ---------- Десктоп ---------- */
@@ -167,9 +154,5 @@
     width: 580px;
     padding: 50px 60px;
     margin: 0;
-  }
-
-  .second-part-container {
-    width: 530px;
   }
 }
