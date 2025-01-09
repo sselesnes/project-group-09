@@ -1,4 +1,4 @@
-<section class="container contact-us_container">
+<section class="container contact-us_container" id="Contact-us-section">
   <h1 class="contact-us_title">Contact Us</h1>
   <div class="contact-us_info">
     <div class="first-part-container">
@@ -39,6 +39,7 @@
 
         <textarea class="form-person-comment" placeholder="Comment"></textarea>
       </form>
+
       <!-- Кнопка -->
       <button class="contact-us_btn" type="submit">
         <!-- Не активируется шрифт в кнопке -->
@@ -46,9 +47,36 @@
       </button>
     </div>
 
-    <!-- Мне загружать картинку для каждого девайса отдельно в размере 1х и 2х ? -->
-
     <!-- Картинка -->
-    <div class="second-part-container"></div>
+    <picture
+      ><source
+        media="(min-width: 1280px)"
+        srcset="
+          /img/contact-us/cu-desktop_1x.webp 1x,
+          /img/contact-us/cu-desktop_2x.webp 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /img/contact-us/cu-tablet_1x.webp 1x,
+          /img/contact-us/cu-tablet_2x.webp 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /img/contact-us/cu-mobile_1x.webp 1x,
+          /img/contact-us/cu-mobile_2x.webp 2x
+        "
+      />
+      <img
+        class="contact-us_img"
+        src="/img/contact-us/wrist-watch.webp"
+        alt="wrist watch"
+        width="704"
+        height="556"
+      />
+    </picture>
   </div>
 </section>
