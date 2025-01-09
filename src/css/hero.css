@@ -1,3 +1,43 @@
 .hero {
-background-color: #FF0
+  background-color: #fff;
+  margin-bottom: 60px;
+}
+
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  max-width: 335px;
+  margin-bottom: 40px;
+}
+
+.hero-descr {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+  max-width: 335px;
+}
+
+.collection {
+  color: #3350e9;
+}
+
+.hero-list {
+  display: flex;
+}
+
+.pics-and-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
