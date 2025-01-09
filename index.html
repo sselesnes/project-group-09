@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-Group-09</title>
     <script type="module" crossorigin src="/project-group-09/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-group-09/assets/index-Bh8oYsxS.css">
+    <link rel="stylesheet" crossorigin href="/project-group-09/assets/index-aRaLfei5.css">
   </head>
   <body>
     <header class="header">
@@ -87,11 +87,60 @@
   </div>
 </header>
 
-      <header class="contact">
-  <div class="container">
-<p>contact us</p>
+      <section class="container contact-us_container">
+  <h1 class="contact-us_title">Contact Us</h1>
+  <div class="contact-us_info">
+    <div class="first-part-container">
+      <p class="contact-us_text">
+        Please use the form below to contact us. Enter your name, email, phone,
+        and message and we'll get back to you shortly.
+      </p>
+
+      <!-- Форма -->
+      <form class="contact-us_form">
+        <!-- нужно как то изменить стиль текста "Name" - class="form-input-person" -->
+        <!-- Не активируется шрифт в placeholder -->
+        <input
+          class="form-input-person"
+          type="name"
+          name="user-name"
+          placeholder="Name"
+          required
+        />
+
+        <input
+          class="form-input-person"
+          type="email"
+          name="form-person-email"
+          placeholder="Email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+        />
+
+        <input
+          class="form-input-person"
+          type="tel"
+          name="form-person-phone"
+          placeholder="(+380-XX-XXX-XX-XX)"
+          pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+          required
+        />
+
+        <textarea class="form-person-comment" placeholder="Comment"></textarea>
+      </form>
+      <!-- Кнопка -->
+      <button class="contact-us_btn" type="submit">
+        <!-- Не активируется шрифт в кнопке -->
+        <p class="btn-text">Send</p>
+      </button>
+    </div>
+
+    <!-- Мне загружать картинку для каждого девайса отдельно в размере 1х и 2х ? -->
+
+    <!-- Картинка -->
+    <div class="second-part-container"></div>
   </div>
-</header>
+</section>
 
     </main>
 
