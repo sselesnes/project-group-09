@@ -12,6 +12,8 @@
  }
 
 .container-adv {
+   padding: 60px 28px;
+   margin: 0 auto;
    background-color: #0c0c0c;
    width: 335px;
    height: 363px;
@@ -35,13 +37,32 @@
 }
 
 .description-adv {
-   padding: 60px 28px;
-   font-family: "Gilroy", sans-serif;
    font-weight: 600;
    font-size: 32px;
    line-height: 1;
    letter-spacing: -0.02em;
    color: #fbfbfb;
+   margin-bottom: 28px;
+}
+
+.text-light {
+   color: rgba(251, 251, 251, 0.5);
+}
+
+.btn-adv {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid rgba(251, 251, 251, 0.15);
+   border-radius: 16px;
+   width: 160px;
+   height: 48px;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.28;
+   text-align: center;
+   color: #fbfbfb;
+   background-color: transparent;
 }
 
 
