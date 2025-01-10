@@ -2,36 +2,31 @@
 .container {
   min-width: 320px;
   max-width: 375px;
+  padding: 0 20px;
   margin: 0 auto;
-  padding: 60px 20px 0;
 }
 
-.header .container {
+/* .header .container {
   padding-top: 0;
-}
+}  е невірно для моєї секції*/
 
-.footer .container {
+/* .footer .container {
   padding-bottom: 20px;
-}
+}  розробник сам робить свою секцію, а не прописується заздалегідь, це не є базою*/
 
 /* Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 80px 32px 0;
-  }
-  .footer .container {
-    padding-bottom: 32px;
+    padding: 0 32px;
   }
 }
 
 /*Desktop devices */
 @media only screen and (min-width: 1280px) {
   .container {
+    /*це пральна ширина згідно гріда макета  */
     max-width: 1280px;
-    padding: 100px 32px 0;
-  }
-  .hero .container {
-    padding-top: 80px;
+    padding: 0 65px;
   }
 }
