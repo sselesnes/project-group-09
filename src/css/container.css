@@ -3,7 +3,7 @@
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
-  padding: 60px 20px 0;
+  padding: 0px 20px;
 }
 
 .header .container {
@@ -18,19 +18,16 @@
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 80px 32px 0;
+    padding: 0px 32px;
   }
 
-  .footer .container {
-    padding-bottom: 32px;
-  }
 }
 
 /*Desktop devices */
 @media only screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding: 100px 32px 0;
+    padding: 0px 65px;
   }
 
   .hero .container {

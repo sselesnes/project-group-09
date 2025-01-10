@@ -11,19 +11,21 @@
    overflow: hidden;
  }
 
-.container-adv {
+.advertisement{
+   padding: 60px 0;
+}
+
+.container.container-adv {
+   max-width: 335px;
    padding: 60px 28px;
-   margin: 0 auto;
    background-color: #0c0c0c;
-   width: 335px;
-   height: 363px;
    position: relative;
    border-radius: 30px;
    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
- }
+}
 
- .background-image {
-   background-image: url(../img-adv/adv_bg.jpg);
+.background-image {
+   background-image: url(../img-adv/adv_bg_mobile.jpg);
    background-size: cover;
    background-position: center;
    opacity: 0.2;
@@ -36,13 +38,18 @@
    border-radius: 30px;
 }
 
+.container-adv-text {
+   display: flex;
+   flex-direction: column;
+   gap: 28px;
+}
+
 .description-adv {
    font-weight: 600;
    font-size: 32px;
    line-height: 1;
    letter-spacing: -0.02em;
    color: #fbfbfb;
-   margin-bottom: 28px;
 }
 
 .text-light {
@@ -65,19 +72,71 @@
    background-color: transparent;
 }
 
-
+/* Retina для мобильних */
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+.background-image {
+      background-image: url(../img-adv/adv_bg_mobile@2x.jpg);
+}
+}
+
+/* Планшет */
+@media screen and (min-width: 768px) {
+.background-image {
+   background-image: url(../img-adv/adv_bg_tablet.jpg);
+}
+.container.container-adv {
+   padding: 80px 64px;
+   max-width: 704px;
+}
+.description-adv {
+   font-size: 48px;
+   line-height: 0.92;
+   
+}
+.container-adv-text {
+   gap: 32px;
+}
+}
+
+/* Retina для планшету */
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+.background-image {
+   background-image: url(../img-adv/adv_bg_tablet@2x.jpg);
+}
+}
+
+/* Десктоп */
+@media screen and (min-width: 1280px) {
+.background-image {
+   background-image: url(../img-adv/adv_bg_desktop.jpg);
+}
+
+.container.container-adv {
+   padding: 83px 80px;
+   max-width: 1150px;
+}
+.container-adv-text {
+   flex-direction: row;
+   gap: 140px;
+}
+
+.description-adv {
+   font-size: 48px;
+   line-height: 0.92;
+   width: 690px;
+}
+}
+
+/* Retina для десктопу */
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
    .background-image {
-      background-image: url(../img-adv/adv_bg@2x.jpg);
-   }
+         background-image: url(../img-adv/adv_bg_desktop@2x.jpg);
+      }
 }
 
 
 
-
-
-
- /* .container-adv {
+ /* .container.container-adv {
    background-image: url(../img-adv/adv_img.png), linear-gradient(#0c0c0c, #0c0c0c);
    background-size: cover;
    background-position: center;
