@@ -1,10 +1,107 @@
 .header-container {
+  height: 74px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: 375px;
-  padding: 20px;
 }
-.header-navigation-list {
+.header-logo-txt {
+  display: block;
+  font-weight: 500;
+  line-height: 100%;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  cursor: pointer;
+}
+.header-burger-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.header-svg-burger-icon {
+  display: block;
+  stroke-width: 2.5px;
+  stroke: #0c0c0c;
+}
+.header-navigation-list,
+.header-social-item-list {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    height: 92px;
+  }
+  .header-logo-txt {
+    font-size: 20px;
+  }
+  .header-svg-burger-icon {
+    width: 40px;
+    height: 40px;
+    stroke-width: 3px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-container {
+    height: 88px;
+  }
+  .header-logo-txt {
+    margin-right: 203px;
+  }
+  .header-navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header-navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header-navigation-list-link {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-align: center;
+    color: #0c0c0c;
+  }
+  .header-social-item-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .header-social-item {
+    display: flex;
+    border: 1px solid rgba(12, 12, 12, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    width: 36px;
+    height: 36px;
+  }
+  .header-navigation-list-link {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-align: center;
+    cursor: pointer;
+  }
+  .header-social-icon-svg {
+    fill: #0c0c0c;
+  }
+  .header-social-icon-svg:focus,
+  .header-social-icon-svg:hover {
+    fill: #3350e9;
+  }
+  .header-burger-btn {
+    display: none;
+  }
 }
