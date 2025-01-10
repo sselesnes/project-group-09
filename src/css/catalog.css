@@ -91,4 +91,7 @@
   .catalog-card-item-name {
     width: 304px;
   }
+  .catalog-header {
+    padding-left: 30px;
+  }
 }
