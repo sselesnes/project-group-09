@@ -1,11 +1,11 @@
 {
-  "name": "project-group-09",
+  "name": "project-DevHive",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-group-09/",
+    "build": "vite build --base=/project-DevHive/",
     "preview": "vite preview"
   },
   "devDependencies": {

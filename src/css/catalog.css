@@ -1,6 +1,9 @@
 .catalog {
   background-color: #fff;
 }
+.catalog-show-more {
+  display: none;
+}
 .catalog-header {
   font-weight: 600;
   font-size: 32px;
@@ -37,7 +40,7 @@
   letter-spacing: -0.02em;
   margin-bottom: 8px;
   text-align: left;
-  min-width: 280px;
+  max-width: 260px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -88,7 +91,13 @@
     column-gap: 16px;
   }
   .catalog-card {
-    padding: 33px 31px 23px;
+    padding: 24px 32px 24px;
+  }
+  .catalog-card-item-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -0.02em;
   }
   .catalog-card-item-desc {
     margin-top: 20px;
