@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+<<<<<<< HEAD
 /* Скидання стилів */
+=======
+/* Reset */
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 /* Змінні */
+=======
+/* Variables */
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 :root {
     --color-primary: #000000;
     --color-accent: #00B068;
     --color-white: #FFFFFF;
     --color-background: #FFFFFF;
+<<<<<<< HEAD
     --color-text: #333333;
     --color-card-bg: #F5F5F5;
     --color-border: #e0e0e0;
@@ -71,19 +80,43 @@
 }
 
 /* Базові стилі */
+=======
+    --color-switch-bg: #E6E6E6;
+    --color-switch-dark: #2C2C2C;
+    --header-height: 38px;
+    --container-padding: 32px;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+    --color-primary: #FFFFFF;
+    --color-background: #1E2023;
+    --color-switch-bg: #2C2C2C;
+}
+
+/* Base */
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-background);
     min-width: 320px;
+<<<<<<< HEAD
     transition: all 0.3s ease;
     color: var(--color-text);
+=======
+    transition: background-color 0.3s ease, color 0.3s ease;
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 }
 
 body.menu-open {
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 /* Контейнер */
+=======
+/* Container */
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 .container {
     margin: 0 auto;
     height: 100%;
@@ -94,7 +127,11 @@ body.menu-open {
     max-width: 1280px;
 }
 
+<<<<<<< HEAD
 /* Шапка */
+=======
+/* Header */
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 .header {
     position: fixed;
     top: 0;
@@ -112,7 +149,11 @@ body.menu-open {
     gap: 32px;
 }
 
+<<<<<<< HEAD
 /* Логотип */
+=======
+/* Logo */
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 .logo {
     text-decoration: none;
     display: inline-flex;
@@ -132,7 +173,11 @@ body.menu-open {
     color: var(--color-accent);
 }
 
+<<<<<<< HEAD
 /* Навігація */
+=======
+/* Navigation */
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 .nav {
     display: none;
 }
@@ -163,13 +208,18 @@ body.menu-open {
     color: var(--color-accent);
 }
 
+<<<<<<< HEAD
 /* Кнопки меню */
+=======
+/* Menu Buttons */
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 .menu-buttons {
     position: relative;
     width: 24px;
     height: 24px;
 }
 
+<<<<<<< HEAD
 /* Перемикач теми */
 .theme-switch {
     display: none;
@@ -356,20 +406,208 @@ body.menu-open {
 }
 
 /* Мобільні стилі (320px - 359px) */
+=======
+/* Burger Menu */
+.burger-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    display: block;
+}
+
+.burger-menu span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-primary);
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.burger-menu span:nth-child(1) { top: 4px; }
+.burger-menu span:nth-child(2) { top: 11px; }
+.burger-menu span:nth-child(3) { top: 18px; }
+
+/* Switch Theme */
+.switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.switch:hover {
+    opacity: 0.8;
+}
+
+.switch:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+.switch-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: var(--color-switch-bg);
+    transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .switch-bg {
+    color: var(--color-switch-dark);
+}
+
+.switch-circle {
+    position: absolute;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    color: var(--color-accent);
+    transition: transform 0.3s ease;
+}
+
+[data-theme="dark"] .switch-circle {
+    transform: translateX(20px);
+}
+
+.mobile-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+}
+
+.close-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--color-primary);
+    transition: color 0.3s ease;
+}
+
+body.menu-open .burger-menu {
+    display: none;
+}
+
+body.menu-open .mobile-close {
+    display: flex;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background-color: var(--color-background);
+    z-index: 98;
+    padding: 32px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.mobile-menu .nav-list {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.mobile-menu .nav-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition-delay: calc(var(--item-index) * 0.1s);
+}
+
+.mobile-menu.is-open .nav-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-menu .nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.mobile-menu .nav-link:hover {
+    color: var(--color-accent);
+}
+
+.mobile-menu .nav-item:nth-child(1) { --item-index: 1; }
+.mobile-menu .nav-item:nth-child(2) { --item-index: 2; }
+.mobile-menu .nav-item:nth-child(3) { --item-index: 3; }
+
+/* Mobile styles (320px - 359px) */
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 @media screen and (min-width: 320px) {
     .container {
         width: 100%;
     }
 }
 
+<<<<<<< HEAD
 /* Мобільні стилі (360px - 767px) */
+=======
+/* Mobile styles (360px - 767px) */
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 @media screen and (min-width: 360px) {
     .container {
         width: 360px;
     }
 }
 
+<<<<<<< HEAD
 /* Планшетні стилі (768px - 1279px) */
+=======
+/* Tablet styles (768px - 1279px) */
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
@@ -393,6 +631,13 @@ body.menu-open {
         display: none;
     }
     
+<<<<<<< HEAD
+=======
+    .mobile-menu {
+        display: none;
+    }
+
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
     .nav-wrapper {
         display: flex;
         align-items: center;
@@ -400,7 +645,11 @@ body.menu-open {
     }
 }
 
+<<<<<<< HEAD
 /* Десктопні стилі (1280px і більше) */
+=======
+/* Desktop styles (1280px and above) */
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 @media screen and (min-width: 1280px) {
     .container {
         width: 1280px;
@@ -418,6 +667,7 @@ body.menu-open {
     .nav-list {
         gap: 40px;
     }
+<<<<<<< HEAD
 }
 
 /* Приклад для різних секцій */
@@ -510,4 +760,6 @@ input, textarea, select {
     background-color: var(--color-card-bg);
     border-color: var(--color-border);
     transition: all 0.3s ease;
+=======
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 } 

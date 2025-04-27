@@ -86,6 +86,10 @@
 }
 
 .mobile-menu .nav-link {
+<<<<<<< HEAD
+=======
+    font-family: 'Poppins', sans-serif;
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -93,6 +97,11 @@
     text-decoration: none;
     transition: color 0.3s ease;
     display: inline-block;
+<<<<<<< HEAD
+=======
+    opacity: 1;
+    visibility: visible;
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 }
 
 .mobile-menu .nav-link:hover {
@@ -101,6 +110,7 @@
 
 /* Close Button */
 .mobile-close {
+<<<<<<< HEAD
     position: absolute;
     top: 0;
     right: 0;
@@ -114,13 +124,26 @@
     align-items: center;
     justify-content: center;
     z-index: 101;
+=======
+    top: 7px;
+    right: 32px;
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 }
 
 .close-icon {
     width: 24px;
     height: 24px;
+<<<<<<< HEAD
     color: var(--color-primary);
     transition: color 0.3s ease;
+=======
+    fill: var(--white);
+    transition: fill 0.3s ease;
+}
+
+.mobile-close:hover .close-icon {
+    fill: var(--accet-green);
+>>>>>>> 5a24386e5dcc3fee11fee5a3f1ecc235f16cf6ce
 }
 
 /* Menu Open State */
