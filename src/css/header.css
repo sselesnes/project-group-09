@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
 /* Змінні */
 :root {
   --color-primary: #000000;
-  --color-accent: #00b068;
+  --color-accet: #00b068;
   --color-white: #ffffff;
   --color-background: #ffffff;
   --color-text: #333333;
@@ -34,14 +32,6 @@
   --circle-transition: 0.3s cubic-bezier(0, -0.02, 0.35, 1.17);
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--color-background);
-  /* min-width: 320px; */
-  transition: all 0.3s ease;
-  color: var(--color-text);
-}
-
 /* Темна тема */
 [data-theme='dark'] {
   --color-primary: #ffffff;
@@ -50,7 +40,14 @@ body {
   --color-card-bg: #2d2d2d;
   --color-border: #404040;
   --color-switch-bg: #2c2c2c;
-  --color-accent: #00b068;
+  --color-accet: #14c57c;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-background);
+  /* min-width: 320px; */
+  transition: all 0.3s ease;
+  color: var(--color-text);
 }
 
 /* Шапка */

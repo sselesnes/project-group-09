@@ -1,14 +1,16 @@
-/* :root {
-    --accent-color: #28b463;
-    --text-color: #000;
-    --bg-color: #fff;
-  } */
+:root {
+  --accent-color: #28b463;
+  --text-color: #000;
+  --bg-color: #fff;
+}
 
-/* * , *::before , *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  } */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* body {
     font-family: Arial, sans-serif;
@@ -18,11 +20,11 @@
   } */
 
 /* .container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0px 20px;
-  }
-   */
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 20px;
+} */
+
 .accent {
   color: var(--accent-color);
 }
