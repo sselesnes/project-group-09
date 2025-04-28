@@ -1,0 +1,129 @@
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    width: 250px;
+  }
+
+  h1 span {
+    color: var(--green);
+  }
+
+  .contact-text {
+    margin-bottom: 24px;
+    font-size: 14px;
+    width: 250px;
+  }
+
+  .contact-info {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .contact-info div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 4px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .form input, .form textarea {
+    width: 100%;
+    background: var(--light-grey);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 14px;
+    resize: none;
+  }
+
+  .form button {
+    background: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+
+  @media (min-width: 768px) {
+     h1 {
+      width: 800px;
+      font-weight: 400;
+      font-size: 108px;
+      line-height: 115%;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .contact-text {
+      width: 600px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .contact-info {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+      justify-content: flex-start;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .form input, .form textarea {
+      font-size: 16px;
+    }
+
+    .form button {
+      font-size: 16px;
+      border-radius: 8px;
+      padding: 12px 24px;
+      width: 173px;
+      height: 48px;
+    }
+    .contact-info div, .form input, .form textarea {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+      }
+}
+
+
+@media (min-width: 1280px) {
+    .left-side {
+    flex: 1 1 50%;
+  }
+
+  .right-side {
+    flex: 1 1 40%;
+    background: var(--light-grey);
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    width: 100%;
+  }
+}

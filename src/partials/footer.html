@@ -1,88 +1,14 @@
 <footer class="footer" id="footer">
-  <section class="contact-section container">
-    <div class="contact-wrapper">
-      <div class="contact-text">
-        <h1 class="contact-title">
-          LET’S <span class="accent">WORK</span>
-          <br>TOGETHER
-        </h1>
-        <p class="contact-description">
-          CONTACT ME TO TRANSFORM YOUR IDEAS INTO EXCEPTIONAL SOLUTIONS.
-        </p>
-        <ul class="contact-info">
-          <li>
-            <img src="../images/footer/Vector1.svg" alt="Phone icon">
-            <span>+38 098 456 78 90</span>
-          </li>
-          <li>
-            <img src="../images/footer/Vector2.svg" alt="Email icon">
-            <span>lloydjefferson@gmail.com</span>
-          </li>
-          <li>
-            <img src="../images/footer/Vector3.svg" alt="Location icon">
-            <span>USA, New York</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="contact-form-wrapper">
-        <form class="contact-form">
-          <input type="email" name="email" placeholder="Your email*" required>
-          <textarea name="message" placeholder="Message" required></textarea>
-          <button type="submit" class="btn">SEND MESSAGE</button>
-        </form>
-      </div>
-      
-  </section>
-</main>
-
-<!-- Popup -->
-<div class="popup is-hidden" id="popup">
-  <div class="popup-content">
-    <button class="popup-close" aria-label="Close popup">×</button>
-    <h2 class="popup-title">THANK YOU FOR YOUR INTEREST IN COOPERATION!</h2>
-    <p class="popup-text">
-      The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.
-    </p>
-  </div>
-</div>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__top">
-      <p class="footer__logo">LLOYD<span class="accent">JEFFERSON.</span></p>
-      <ul class="footer__socials">
-        <li class="footer-social-li" ><a class="footer-social-a" href="#">Instagram</a></li>
-        <li class="footer-social-li" ><a class="footer-social-a" href="#">Facebook</a></li>
-        <li class="footer-social-li" ><a class="footer-social-a" href="#">Linkedin</a></li>
-        <li class="footer-social-li-l" ><a class="footer-social-a-l" href="#">GitHub</a></li>
-      </ul>
+    <div class="lloydjefferson"><b>LLOYD<span style="color:var(--green);">JEFFERSON.</span></b></div>
+    <div class="social-links">
+      <div class="social-link-li">Instagram</div>
+      <div class="social-link-li">Facebook</div>
+      <div class="social-link-li">Linkedin</div>
+      <div class="social-link-li">GitHub</div>
     </div>
-    <p class="footer__copyright">
-      &copy; Copyright 2024. Made by LloydJefferson
-    </p>
-  </div>
-</footer>
+    <div class="copyright-24">© Copyright 2024. Made by LloydJefferson</div>
+  </footer>
 
-<script>
-  const form = document.querySelector('.contact-form');
-  const popup = document.getElementById('popup');
-  const closeBtn = document.querySelector('.popup-close');
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    popup.classList.remove('is-hidden');
-    form.reset();
-  });
 
-  closeBtn.addEventListener('click', function () {
-    popup.classList.add('is-hidden');
-  });
-
-  window.addEventListener('click', function (e) {
-    if (e.target === popup) {
-      popup.classList.add('is-hidden');
-    }
-  });
-</script>
 
