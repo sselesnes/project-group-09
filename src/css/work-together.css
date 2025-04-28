@@ -1,13 +1,9 @@
 h1 {
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 16px;
-    width: 250px;
+   
   }
 
   h1 span {
-    color: var(--green);
+    color: var(--Accet-green, #00b068);
   }
 
   .contact-text {
@@ -25,6 +21,15 @@ h1 {
     flex-direction: column;
   }
 
+.work-together-wraper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    
+    flex-direction: column;
+}
+
   .contact-info div {
     display: flex;
     align-items: center;
@@ -34,9 +39,9 @@ h1 {
 
   .form {
     display: flex;
-    flex-direction: column;
     gap: 16px;
     margin-bottom: 32px;
+    flex-wrap: wrap;
   }
 
   .form input, .form textarea {
@@ -50,7 +55,7 @@ h1 {
   }
 
   .form button {
-    background: var(--green);
+    background: var(--accet-green, #00b068);
     color: var(--white);
     border: none;
     border-radius: 8px;
@@ -88,11 +93,21 @@ h1 {
       flex-wrap: nowrap;
     }
 
+    .work-together-wraper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 40px;
+        min-width: 320px;
+        flex-direction: column;
+    }
+
     .form input, .form textarea {
       font-size: 16px;
     }
 
     .form button {
+        background: var(--accet-green, #00b068);
       font-size: 16px;
       border-radius: 8px;
       padding: 12px 24px;
@@ -126,4 +141,14 @@ h1 {
   .form {
     width: 100%;
   }
+
+  .work-together-wraper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    min-width: 320px;
+    flex-direction: row;
 }
+}
+

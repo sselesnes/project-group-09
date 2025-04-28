@@ -18,6 +18,7 @@ footer {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+  
 }
 
 
@@ -51,6 +52,7 @@ footer {
     line-height: 100%;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    
   }
 
   .social-link-li {
