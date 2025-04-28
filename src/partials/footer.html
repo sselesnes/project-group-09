@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <footer class="footer" id="footer">
   <section class="contact-section container">
     <div class="contact-wrapper">
@@ -46,43 +47,22 @@
     </p>
   </div>
 </div>
+=======
+>>>>>>> ba42cd5a7da54dec8b9e98ca24b625f23e52bb0f
 
 <footer class="footer">
   <div class="container">
-    <div class="footer__top">
-      <p class="footer__logo">LLOYD<span class="accent">JEFFERSON.</span></p>
-      <ul class="footer__socials">
-        <li class="footer-social-li" ><a class="footer-social-a" href="#">Instagram</a></li>
-        <li class="footer-social-li" ><a class="footer-social-a" href="#">Facebook</a></li>
-        <li class="footer-social-li" ><a class="footer-social-a" href="#">Linkedin</a></li>
-        <li class="footer-social-li-l" ><a class="footer-social-a-l" href="#">GitHub</a></li>
-      </ul>
+    <div class="lloydjefferson"><b>LLOYD<span style="color: var(--Accet-green, #00b068);">JEFFERSON.</span></b></div>
+    <div class="social-links">
+      <div class="social-link-li">Instagram</div>
+      <div class="social-link-li">Facebook</div>
+      <div class="social-link-li">Linkedin</div>
+      <div class="social-link-li">GitHub</div>
     </div>
-    <p class="footer__copyright">
-      &copy; Copyright 2024. Made by LloydJefferson
-    </p>
+    <div class="copyright-24">© Copyright 2024. Made by LloydJefferson</div>
   </div>
-</footer>
+  </footer>
 
-<script>
-  const form = document.querySelector('.contact-form');
-  const popup = document.getElementById('popup');
-  const closeBtn = document.querySelector('.popup-close');
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    popup.classList.remove('is-hidden');
-    form.reset();
-  });
 
-  closeBtn.addEventListener('click', function () {
-    popup.classList.add('is-hidden');
-  });
-
-  window.addEventListener('click', function (e) {
-    if (e.target === popup) {
-      popup.classList.add('is-hidden');
-    }
-  });
-</script>
 
