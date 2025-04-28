@@ -1,6 +1,4 @@
-h1 {
-   color: #00b068;
-  }
+
 
   h1 span {
     color: var(--Accet-green, #00b068);
@@ -62,6 +60,7 @@ h1 {
     padding: 12px;
     cursor: pointer;
     font-size: 14px;
+    width: 100%;
   }
 
 
@@ -152,3 +151,35 @@ h1 {
 }
 }
 
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  .modal {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 320px;
+    text-align: center;
+    position: relative;
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    font-size: 18px;
+  }
