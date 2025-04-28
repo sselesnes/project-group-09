@@ -1,0 +1,355 @@
+:root {
+    --accent-color: #28b463;
+    --text-color: #000;
+    --bg-color: #fff;
+  }
+  
+  * , *::before , *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 20px;
+  }
+  
+  .accent {
+    color: var(--accent-color);
+  }
+  
+  
+  .contact-section {
+    padding: 60px 0;
+    
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .contact-text {
+    max-width: 500px;
+  }
+  
+  .contact-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .contact-description {
+    max-width: 488px;
+    font-size: 1rem;
+    margin-bottom: 120px;
+  }
+  
+  @media (max-width: 320px) {
+    .contact-description {
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+  }
+  
+  .contact-info {
+    list-style: none;
+  }
+  @media (max-width: 320px) {
+    .contact-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        display: flex;
+        justify-content:none ;
+    }
+  }
+  
+  .contact-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form-wrapper {
+    position: relative;
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+  }
+  
+  @media (min-width: 1280px) {
+    .contact-form-wrapper {
+      transform: translateY(190px);
+    }
+  }
+  
+  
+  .background-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: lightgrey;
+  }
+  
+  .contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .btn {
+    background-color: var(--accent-color);
+      color: #fff;
+      padding: 12px;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      padding: 12px 24px;
+      width: 173px;
+      height: 48px;
+  }
+  
+  .btn:hover {
+    background-color: #1e8449;
+  }
+  
+  /* Popup styles */
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+  }
+  
+  .popup.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .popup-content {
+    background-color: var(--bg-color);
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    position: relative;
+    animation: popupShow 0.4s ease forwards;
+  }
+  
+  .popup-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+  }
+  
+  .popup-text {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  @keyframes popupShow {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Media queries */
+  @media (max-width: 1280px) {
+    .container {
+      padding: 40px 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-text {
+      max-width: 100%;
+    }
+  
+    .contact-info {
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+      gap: 20px;
+      display: flex;
+    }
+  
+    .contact-info li {
+      flex-direction: row;
+    }
+  
+    .contact-form-wrapper {
+      width: 100%;
+      padding-bottom: 40px;
+    }
+  
+    .background-dots {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .contact-title {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .contact-description {
+      font-size: 0.9rem;
+      max-width: 240px;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+  
+  
+  .footer__top {
+    display: flex;
+      justify-content: space-between;
+  }
+  
+  @media (max-width: 320px) {
+    .footer__top {
+      display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+  }
+  
+  
+  
+  @media (max-width: 320px) {
+    .footer__logo {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    }
+  }
+  .footer__socials   {
+    display: flex;
+    list-style: none;
+  }
+  
+  @media (max-width: 320px) {
+    .footer__socials   {
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+    }
+  }
+  
+  
+  @media (max-width: 320px) {
+    .footer-social-li {
+      padding-bottom: 25px;
+    }
+  }
+  
+  
+  .footer-social-a {
+    text-decoration: none;
+    padding-right: 40px;
+    font-weight: 300;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.03em;
+      color: black;
+  }
+  
+  .footer-social-a-l {
+    text-decoration: none;
+    font-weight: 300;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.03em;
+      color: black;
+  }
+  
+  .footer__copyright {
+    display: flex;
+        justify-content: flex-end;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: black;
+  }
+  
+  
+  @media (max-width: 320px) {
+    .footer__copyright {
+      max-width: 234px;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: 0.03em;
+          text-align: center;
+          color: black;
+          
+          padding-left: 50px;
+    }
+  }

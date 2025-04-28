@@ -1,4 +1,51 @@
-<header class="header" id="header">
-  <div class="container"></div>
+<header class="header">
+    <div class="header-container">
+        <div class="header-left">
+            <a href="/" class="logo">
+                <span class="logo-text">LLOYD</span>
+                <span class="logo-accent">JEFFERSON</span><span class="logo-dot">.</span>
+            </a>
+        </div>
+        <nav class="nav">
+            <div class="nav-wrapper">
+                <div class="switch-wrapper">
+                    <label class="theme-switch">
+                        <input type="checkbox" class="theme-switch__checkbox">
+                        <div class="theme-switch__container">
+                            <div class="theme-switch__circle-container">
+                                <div class="theme-switch__sun-moon-container">
+                                    <div class="theme-switch__moon">
+                                        <div class="theme-switch__spot"></div>
+                                        <div class="theme-switch__spot"></div>
+                                        <div class="theme-switch__spot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="theme-switch__clouds"></div>
+                            <div class="theme-switch__stars"></div>
+                        </div>
+                    </label>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item" id="about-me-link"><a href="#about-me" class="nav-link">About me</a></li>
+                    <li class="nav-item" id="projects-link"><a href="#my-projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item" id="contacts-link"><a href="#work-together" class="nav-link">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-buttons">
+            <button type="button" class="burger-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button type="button" class="mobile-close" aria-label="Close menu">
+                <svg class="close-icon">
+                    <use href="../images/header/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
 </header>
-<script type="module" src="./js/header.js"></script>
+
+<script type="module" src="../js/header.js"></script> 
