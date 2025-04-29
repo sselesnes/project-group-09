@@ -1,6 +1,6 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-const pathSprite = new URL('../images/my-projects/sprite.svg', import.meta.url);
+const pathSprite = '../images/my-projects/sprite.svg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
