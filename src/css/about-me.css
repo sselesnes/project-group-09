@@ -4,7 +4,7 @@
 }
 [data-theme='dark'] {
   --color-text-markup: var(--white);
-  --color-accet-markup: var(-accet-green-dt);
+  --color-accet-markup: var(--accet-green-dt);
 }
 
 /* ---------- Мобилка ---------- */
@@ -21,6 +21,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-text-markup);
+}
+.about-me_title span {
+  color: var(--color-accet-markup);
 }
 
 .about-me_info {
