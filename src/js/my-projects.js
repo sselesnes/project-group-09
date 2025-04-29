@@ -101,7 +101,7 @@ function createGallery(projects) {
     <button class="button-my-project" onclick="window.open('https://github.com/sselesnes/project-group-09', '_blank')">
       <span class="visit-my-project">VISIT</span>
       <svg class="svg-my-project" height="24" width="24">
-        <use class="svg-visit-my-project" href="${pathSprite}#icon-visit-arrow"></use>
+        <use class="svg-visit-my-project" href="${pathSprite}#icon-visit-arrow-my-project"></use>
       </svg>
     </button>
   </div>
@@ -123,7 +123,7 @@ async function loadNextProjects(shouldScroll = true) {
   );
   const previousLastItem = gallery.lastElementChild;
 
-  await new Promise(resolve => setTimeout(resolve, 200)); // Плавная задержка для UX
+  await new Promise(resolve => setTimeout(resolve, 200)); 
 
   createGallery(nextProjects);
 
