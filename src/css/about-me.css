@@ -1,3 +1,12 @@
+:root {
+  --color-text-markup: var(--black);
+  --color-accet-markup: var(--accet-green);
+}
+[data-theme='dark'] {
+  --color-text-markup: var(--white);
+  --color-accet-markup: var(-accet-green-dt);
+}
+
 /* ---------- Мобилка ---------- */
 .about-me {
   padding-top: 40px;
@@ -11,7 +20,7 @@
   line-height: 1.24;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--color-text-markup);
 }
 
 .about-me_info {
@@ -35,7 +44,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--color-text-markup);
 }
 
 .about-me_info-biography-text {
@@ -44,7 +53,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--color-text-markup);
   margin-top: 32px;
   margin-bottom: 24px;
 }
@@ -65,7 +74,7 @@
   border-radius: 1px;
   width: 4px;
   height: 4px;
-  background-color: #00b068;
+  background-color: var(--color-accet-markup);
   mask-image: url(/images/about-me/about-me_rectangle_x.svg);
   mask-repeat: no-repeat;
   mask-size: cover;
@@ -85,7 +94,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--color-text-markup);
   margin-bottom: 32px;
 }
 
@@ -95,7 +104,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--color-text-markup);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -117,7 +126,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--color-text-markup);
   margin-bottom: 32px;
 }
 
@@ -127,7 +136,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--color-text-markup);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -179,7 +188,7 @@
     top: 100%;
     right: 0;
     transform: translateY(12px);
-    background-color: #00b068;
+    background-color: var(--color-accet-markup);
     mask-image: url(/images/about-me/about-me_bg.svg);
     mask-repeat: no-repeat;
     mask-size: cover;
