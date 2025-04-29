@@ -1,32 +1,32 @@
-body.dark .my-projects {
+[data-theme='dark'] .my-projects {
     background-color: var(--black-dt);
 }
 
-body.dark .hedline-my-projects,
-body.dark .text-my-project,
-body.dark .names-my-project,
-body.dark .visit-my-project,
-body.dark .load-more-span-my-project {
+[data-theme='dark'] .hedline-my-projects,
+[data-theme='dark'] .text-my-project,
+[data-theme='dark'] .names-my-project,
+[data-theme='dark'] .visit-my-project,
+[data-theme='dark'] .load-more-span-my-project {
     color: var(--white-dt);
 }
 
-body.dark .hedline-span-my-project {
-    color: var(--accent-green-dt);
+[data-theme='dark'] .hedline-span-my-project {
+    color: var(--accet-green-dt);
 }
 
-body.dark .button-my-project {
+[data-theme='dark'] .button-my-project {
     background-color: var(--charcoal-dt);
 }
 
-body.dark .button-my-project:hover {
+[data-theme='dark'] .button-my-project:hover {
     background: var(--hover-charcoal-dt);
 }
 
-body.dark .btn-load-more-my-project {
+[data-theme='dark'] .btn-load-more-my-project {
     background: var(--black-dt);
 }
 
-body.dark .load-more-span-my-project:hover {
+[data-theme='dark'] .load-more-span-my-project:hover {
     color: var(--accent-green-dt);
 }
 
@@ -38,10 +38,10 @@ body.dark .load-more-span-my-project:hover {
     line-height: 1.23;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: flex;
-    justify-content: center;
     transition: font-size 1s ease, line-height 1s ease;
     margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (max-width: 359px) {
@@ -66,7 +66,7 @@ body.dark .load-more-span-my-project:hover {
 }
 
 .hedline-span-my-project {
-    color: var(--accent-green);
+    color: var(--accet-green-dt);
 }
 
 .gallery {
