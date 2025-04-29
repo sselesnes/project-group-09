@@ -2,25 +2,42 @@
 
 /* Змінні */
 :root {
-    --color-primary: #000000;
-    --color-accent: #00B068;
+    /* Light Theme Colors */
+    --color-black: #292929;
+    --color-accent-green: #00B068;
     --color-white: #FFFFFF;
-    --color-background: #FFFFFF;
-    --color-text: #333333;
-    --color-card-bg: #F5F5F5;
-    --color-border: #e0e0e0;
-    --color-switch-bg: #E6E6E6;
-    --color-switch-dark: #2C2C2C;
+    --color-light-grey: #E4E5E6;
+    --color-hover-grey: #BBBBBB;
+    --color-light-accent: #BCDFD1;
+    --color-hover: #009156; 
+    --color-accet-markup: #00B068;
+
+    /* Dark Theme Colors */
+    --color-black-dt: #1E2023;
+    --color-accent-green-dt: #14C57C;
+    --color-white-dt: #F0F0F0;
+    --color-charcoal-dt: #2A2D32;
+    --color-hover-charcoal-dt: #3B3F45;
+    --color-dark-accent-dt: #204136;
+    --color-hover-green-dt: #009156;
+    
+    /* System Colors */
+    --color-error: #E74A3B;
+
+    /* Header Variables */
     --header-height: 60px;
     --header-height-tablet: 80px;
     --container-padding: 32px;
-    --container-width: 48px;
-    --container-height: 24px;
-    --container-radius: 24px;
+
+    /* Theme Switch Variables */
+    --toggle-size: 20px;
+    --container-width: 3.2em;
+    --container-height: 1.6em;
+    --container-radius: 6.25em;
     --container-light-bg: #3D7EAE;
     --container-night-bg: #1D1F2C;
-    --circle-container-diameter: 28px;
-    --sun-moon-diameter: 20px;
+    --circle-container-diameter: 2.2em;
+    --sun-moon-diameter: 1.4em;
     --sun-bg: #ECCA2F;
     --moon-bg: #C4C9D1;
     --spot-color: #959DB1;
@@ -30,17 +47,29 @@
     --back-clouds-color: #AACADF;
     --transition: .5s cubic-bezier(0, -0.02, 0.4, 1.25);
     --circle-transition: .3s cubic-bezier(0, -0.02, 0.35, 1.17);
+
+    /* Світла тема (за замовчуванням) */
+    --color-primary: var(--color-black);
+    --color-background: var(--color-white);
+    --color-text: var(--color-black);
+    --color-card-bg: var(--color-light-grey);
+    --color-border: var(--color-hover-grey);
+    --color-switch-bg: var(--color-light-grey);
+    --color-accent: var(--color-accent-green);
+    --color-hover-accent: var(--color-hover);
 }
 
 /* Темна тема */
 [data-theme="dark"] {
-    --color-primary: #FFFFFF;
-    --color-background: #1a1a1a;
-    --color-text: #ffffff;
-    --color-card-bg: #2d2d2d;
-    --color-border: #404040;
-    --color-switch-bg: #2C2C2C;
-    --color-accent: #00B068;
+    --color-primary: var(--color-white-dt);
+    --color-background: var(--color-black-dt);
+    --color-text: var(--color-white-dt);
+    --color-card-bg: var(--color-charcoal-dt);
+    --color-border: var(--color-hover-charcoal-dt);
+    --color-switch-bg: var(--color-charcoal-dt);
+    --color-accent: var(--color-accent-green-dt);
+    --color-hover-accent: var(--color-hover-green-dt);
+    --color-accet-markup: var(--color-accent-green-dt);
 }
 
 body {
@@ -135,6 +164,42 @@ body {
     position: relative;
     width: 24px;
     height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-menu {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger-menu span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger-menu.is-open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger-menu.is-open span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.is-open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Перемикач теми */
@@ -212,27 +277,27 @@ body {
 
 .theme-switch__spot {
     position: absolute;
-    top: 0.75em;
-    left: 0.312em;
-    width: 0.75em;
-    height: 0.75em;
+    top: 0.4em;
+    left: 0.2em;
+    width: 0.4em;
+    height: 0.4em;
     border-radius: var(--container-radius);
     background-color: var(--spot-color);
     box-shadow: 0em 0.0312em 0.062em rgba(0, 0, 0, 0.25) inset;
 }
 
 .theme-switch__spot:nth-of-type(2) {
-    width: 0.375em;
-    height: 0.375em;
-    top: 0.937em;
-    left: 1.375em;
+    width: 0.2em;
+    height: 0.2em;
+    top: 0.6em;
+    left: 0.8em;
 }
 
 .theme-switch__spot:nth-last-of-type(3) {
-    width: 0.25em;
-    height: 0.25em;
-    top: 0.312em;
-    left: 0.812em;
+    width: 0.15em;
+    height: 0.15em;
+    top: 0.2em;
+    left: 0.5em;
 }
 
 .theme-switch__clouds {

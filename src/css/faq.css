@@ -1,5 +1,14 @@
 /*MOBILE*/
-h2 {
+.faq {
+  margin-top: 80px;
+}
+.faq-container {
+  min-width: 320px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+.faq-header {
   width: 320px;
   font-family: Impact;
   font-size: 52px;
@@ -8,11 +17,19 @@ h2 {
   line-height: 1.23;
   letter-spacing: 1.8px;
   text-transform: uppercase;
-  color: var(--Black, #292929);
+  color: var(--black);
 }
 
-.highlight {
-  color: var(--Accet-green, #00b068);
+[data-theme='dark'] .faq-header {
+  color: var(--white-dt);
+}
+
+[data-theme='dark'] .faq-highlight {
+  color: var(--accet-green);
+}
+
+.faq-highlight {
+  color: var(--accet-green-dt);
 }
 
 .decor-background {
@@ -22,7 +39,7 @@ h2 {
 .accordion-container {
   margin-top: 40px;
   flex: 1;
-  width: 320px;
+  max-width: 320px;
   height: auto;
 }
 
@@ -32,10 +49,14 @@ h2 {
   width: 320px;
   padding: 28px 24px;
   align-items: flex-start;
+
   background-color: transparent;
   transition: background-color 0.3s ease;
   border-radius: 16px;
-  border-bottom: 1px solid var(--Light-grey, #e4e5e6);
+  border-bottom: 1px solid var(--light-grey);
+}
+[data-theme='dark'] .ac {
+  border-bottom: 1px solid var(--white-dt);
 }
 
 .ac-header {
@@ -55,7 +76,7 @@ h2 {
   background: none;
   border: none;
   font-family: Poppins, sans-serif;
-  color: var(--Black, #292929);
+  color: var(--black);
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -65,8 +86,13 @@ h2 {
   word-break: break-word;
 }
 
+[data-theme='dark'] .ac-trigger {
+  color: var(--white-dt);
+}
+
 .ac .ac-trigger::after {
   content: '';
+  font-size: 0;
   display: block;
   width: 24px;
   height: 24px;
@@ -78,25 +104,54 @@ h2 {
   right: 1px;
   top: 50%;
   transform: translateY(-50%);
+  filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(0)
+    contrast(100%);
+}
+
+[data-theme='dark'] .ac .ac-trigger::after {
+  filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(1.2)
+    contrast(100%);
 }
 
 .ac.is-active > .ac-header .ac-trigger::after {
   content: '';
   background-image: url('../images/faq/icons/button-up.svg');
+  filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(0)
+    contrast(100%);
+}
+[data-theme='dark'] .ac.is-active > .ac-header .ac-trigger::after {
+  content: '';
+  filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(1.2)
+    contrast(100%);
 }
 
 .ac-text {
-  font-family: Poppins, sans-serif;
+  font-family: Poppins;
   font-size: 16px;
   text-align: start;
+  align-self: stretch;
+  color: var(--black);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+[data-theme='dark'] .ac-text {
+  color: var(--white-dt);
 }
 
 .ac.is-active {
   background-color: var(--light-accent, #bcdfd1);
 }
+[data-theme='dark'] .ac.is-active {
+  background-color: var(--dark-accet-dt);
+}
 
 .ac.is-active .ac-trigger {
-  color: var(--Accet-green, #00b068);
+  color: var(--black);
+}
+[data-theme='dark'] .ac.is-active .ac-trigger {
+  color: var(--white-dt);
 }
 
 .ac-panel {
@@ -112,12 +167,17 @@ h2 {
 
 /* TABLET */
 @media only screen and (min-width: 768px) {
-  .faq-header-container {
-    max-width: 594px;
-    flex-shrink: 0;
+  .faq {
+    margin-top: 124px;
   }
-  h2 {
+  .faq-container {
+    max-width: 768px;
+    height: 1120px;
+  }
+
+  .faq-header {
     width: 592px;
+    height: 372px;
     font-size: 108px;
     line-height: 1.15;
   }
@@ -139,19 +199,17 @@ h2 {
 
 /* DESKTOP */
 @media only screen and (min-width: 1280px) {
-  .faq-section-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 104px;
+  .faq {
+    margin-top: 164px;
+  }
+  .faq-container {
+    max-width: 1280px;
+    /* gap: 104px; */
+    flex-direction: raw;
     flex-wrap: wrap;
   }
 
-  .faq-header-container {
-    max-width: 520px;
-    flex-shrink: 0;
-  }
-  h2 {
+  .faq-header {
     width: 520px;
   }
 
@@ -161,13 +219,16 @@ h2 {
     width: 520.592px;
     height: 406.244px;
     flex-shrink: 0;
-    fill: var(--Accet-green, #00b068);
-    filter: blur(0.70084285736084px);
+    fill: var(--accet-green);
+    filter: blur(3.70084285736084px);
   }
 
+  [data-theme='dark'] .decor-background {
+    fill: var(--accet-green-dt);
+  }
   /* accordion */
   .accordion-container {
-    margin-top: 276px;
+    margin-top: 376px;
     height: auto;
   }
 
