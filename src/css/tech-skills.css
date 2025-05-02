@@ -1,0 +1,210 @@
+.container-marquee {
+    padding: 0;
+    margin-bottom: 164px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1279px) {
+    .container-marquee {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container-marquee {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.marquee {
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.marquee-rotate {
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transform: rotate(2deg);
+}
+
+.marquee-inner {
+    display: inline-flex;
+    align-items: center;
+    padding: 32px 0px;
+    gap: 16px;
+    background: var(--light-accent);
+    cursor: pointer;
+    animation-direction: normal;
+    
+    animation: marqueeLine 30s linear infinite;
+}
+
+[data-theme='dark'] .marquee-inner {
+    background: var(--dark-accet-dt);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1279px) {
+    .marquee-inner{
+        padding: 40px 0px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .marquee-inner {
+        padding: 40px 0px;
+    }
+}
+
+.marquee-inner-rotate {
+    display: inline-flex;
+    transform: rotate(2deg);
+    padding: 32px 0px;
+    align-items: center;
+    gap: 16px;
+    background: var(--light-grey);
+    cursor: pointer;
+    animation-direction: normal;
+
+    animation: marqueeLine 30s linear infinite;
+}
+
+[data-theme='dark'] .marquee-inner-rotate {
+    background: var(--charcoal-dt);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1279px) {
+    .marquee-inner-rotate {
+        padding: 40px 0;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .marquee-inner-rotate {
+        padding: 40px 0;
+    }
+}
+
+.marquee-inner.paused,
+.marquee-inner-rotate.paused {
+    animation-play-state: paused;
+}
+
+.marquee-line {
+    color: var(--black);
+    /* Mobile/h3-360 */
+    font-family: var(--font-family);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 125% */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    animation-name: marqueeLine;
+}
+
+[data-theme='dark'] .marquee-line {
+    color: var(--white-dt);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1279px) {
+    .marquee-line {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .marquee-line {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+
+.marquee-line-rotate {
+    color: var(--accet-green);
+    /* Mobile/h3-360 */
+    font-family: var(--font-family);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 125% */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+[data-theme='dark'] .marquee-line-rotate {
+    color: var(--accet-green-dt);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1279px) {
+    .marquee-line-rotate {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .marquee-line-rotate {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+
+.marquee-dot {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: var(--accet-green);
+}
+
+[data-theme='dark'] .marquee-dot {
+    background: var(--accet-green-dt);
+}
+
+.marquee-dot-rotate {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: var(--black);
+}
+
+[data-theme='dark'] .marquee-dot-rotate {
+    background: var(--white-dt);
+}
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

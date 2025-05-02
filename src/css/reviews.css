@@ -1,0 +1,155 @@
+:root {
+  --font-family: 'Poppins', sans-serif;
+  --second-family: 'Impact', sans-serif;
+  --third-family: 'Montserrat', sans-serif;
+}
+
+/* ---------- Мобилка ---------- */
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.reviews-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: center;
+}
+
+[data-theme='dark'] .reviews-title {
+  color: var(--white-dt);
+}
+
+.reviews-list {
+  display: flex;
+}
+
+.reviews-list-item {
+  border-radius: 16px;
+  padding: 32px;
+  background-color: var(--light-grey);
+  margin-top: 40px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto !important;
+}
+
+[data-theme='dark'] .reviews-list-item {
+  background-color: var(--charcoal-dt);
+}
+
+.reviews-list-item:last-child {
+  display: none;
+}
+
+.reviews-list-item-text {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+
+[data-theme='dark'] .reviews-list-item-text {
+  color: var(--white-dt);
+}
+
+.reviews-list-item-author {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  align-items: center;
+}
+
+.reviews-list-item-img {
+  border-radius: 50%;
+}
+
+.reviews-list-item-name {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+
+[data-theme='dark'] .reviews-list-item-name {
+  color: var(--white-dt);
+}
+
+.reviews-list-btns {
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.reviews-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid var(--black);
+  width: 40px;
+  height: 40px;
+  stroke: var(--black);
+  fill: transparent;
+}
+
+.reviews-btn.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+[data-theme='dark'] .reviews-btn {
+  background: var(--charcoal-dt);
+  stroke: var(--white-dt);
+  border: 1px solid var(--white-dt);
+}
+
+/* ---------- Планшет ---------- */
+@media only screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
+
+  .reviews-title {
+    font-size: 108px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  .reviews-list-item {
+    margin-top: 60px;
+  }
+}
+
+/* ---------- Десктоп ---------- */
+@media only screen and (min-width: 1280px) {
+  .reviews {
+    padding-top: 164px;
+    padding-bottom: 164px;
+  }
+
+  .reviews-list-item {
+    margin-top: 80px;
+  }
+
+  .reviews-list-item:last-child {
+    display: inline;
+  }
+
+  .reviews-btn {
+    width: 48px;
+    height: 48px;
+  }
+}

@@ -1,0 +1,192 @@
+.benefits {
+  margin: 80px 0 0 0;
+}
+
+.benefits-container {
+  height: 1120px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+.benefits-header {
+  max-width: 320px;
+  height: 192px;
+  margin-bottom: 40px;
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+[data-theme='dark'] .benefits-header {
+  color: var(--white-dt);
+  /* Mobile/h2-360 */
+  /* font-family: Impact;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase; */
+}
+.benefits-header-part {
+  color: var(--accet-green-dt);
+}
+[data-theme='dark'] .benefits-header-part {
+  color: var(--accet-green);
+}
+.decor-hidden {
+  display: none;
+}
+.benefits-list {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 320px;
+  gap: 32px;
+}
+.benefits-list-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 204px;
+  gap: 16px;
+}
+.benefits-icons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  background: var(--light-accent);
+}
+[data-theme='dark'] .benefits-icons-wrapper {
+  background: var(--dark-accet-dt);
+}
+.benefits-icons {
+  stroke-width: 2px;
+
+  stroke: var(--accet-green);
+  fill: var(--light-accent);
+}
+[data-theme='dark'] .benefits-icons {
+  stroke: var(--accet-green-dt);
+  fill: var(--dark-accet-dt);
+}
+.benefits-subheader {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+[data-theme='dark'] .benefits-subheader {
+  font-size: 18px;
+  color: var(--white-dt);
+}
+.benefits-subheader-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+[data-theme='dark'] .benefits-subheader-description {
+  color: var(--white-dt);
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    margin: 124px 0 0 0;
+  }
+  .benefits-container {
+    max-width: 768px;
+    height: 1036px;
+  }
+  .benefits-header {
+    max-width: 704px;
+    height: 372px;
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+  [data-theme='dark'] .benefits-header {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+  .benefits-list {
+    max-width: 704px;
+    height: 664px;
+    flex-flow: row wrap;
+  }
+  .benefits-list-item:first-child {
+    margin-left: 368px;
+  }
+  .benefits-list-item {
+    max-width: 336px;
+    height: 208px;
+  }
+  .benefits-subheader {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .benefits {
+    margin: 164px 0;
+  }
+  .benefits-container {
+    max-width: 1280px;
+    height: 676px;
+    position: relative;
+  }
+  .benefits-header {
+    font-size: 108px;
+    max-width: 682px;
+    line-height: 1.14815;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+  }
+  .benefits-subheader {
+    letter-spacing: 1.8px;
+  }
+  .benefits-decor {
+    filter: blur(3.70084285736084px);
+    fill: var(--accet-green);
+    position: absolute;
+    top: -111px;
+    right: 35px;
+    z-index: 10;
+  }
+  [data-theme='dark'] .benefits-decor {
+    filter: blur(7.40168571472168px);
+    fill: var(--accet-green-dt);
+  }
+  .decor-hidden {
+    display: block;
+  }
+  .benefits-list {
+    max-width: 1280px;
+    height: 400px;
+    margin-top: -100px;
+  }
+  .benefits-list-item:first-child {
+    margin-left: 832px;
+  }
+  .benefits-list-item {
+    max-width: 384px;
+    height: 184px;
+  }
+}

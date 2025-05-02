@@ -1,4 +1,133 @@
 <section class="work-together" id="work-together">
-  <div class="container"></div>
+  <div class="container">
+    <div class="work-together-wraper">
+      <div class="left-side">
+        <h1>LET'S <span>WORK TOGETHER</span></h1>
+        <div class="contact-text">
+          CONTACT ME TO TRANSFORM YOUR IDEAS INTO EXCEPTIONAL SOLUTIONS.
+        </div>
+
+        <ul class="contact-info">
+          <li class="li-info-work">
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                stroke="#00B068"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+              />
+            </svg>
+            <span><a href="tel:+380984567890">+38 098 456 78 90</a></span>
+          </li>
+          <li class="li-info-work">
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                stroke="#00B068"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              />
+            </svg>
+            <span
+              ><a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=lloydjefferson@gmail.com"
+                >lloydjefferson@gmail.com</a
+              ></span
+            >
+          </li>
+          <li class="li-info-work">
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <g
+                stroke="#00B068"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0v0Z" />
+                <path
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 0 1 15 0v0Z"
+                />
+              </g>
+            </svg>
+            <span
+              ><a href="https://maps.app.goo.gl/PPNB9Ns66MCT58eX9"
+                >USA, New York</a
+              ></span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="right-side">
+        <form class="form" id="contactForm">
+          <svg
+            class="form-email-valid"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            fill="none"
+          >
+            <path
+              d="M16 0a15.997 15.997 0 0 1 16 16 16.003 16.003 0 0 1-16 16A16.003 16.003 0 0 1 0 16 16.003 16.003 0 0 1 16 0zm-1.993 19.157L10.453 15.6a1.362 1.362 0 0 0-.97-.401 1.37 1.37 0 0 0-1.372 1.371c0 .364.145.713.402.97l4.526 4.526a1.357 1.357 0 0 0 .971.404 1.38 1.38 0 0 0 .971-.404l9.371-9.374a1.366 1.366 0 0 0 .41-.972 1.368 1.368 0 0 0-.848-1.275 1.384 1.384 0 0 0-1.055.003c-.167.07-.318.173-.445.302l-8.405 8.405z"
+            />
+          </svg>
+          <input
+            type="text"
+            name="email"
+            placeholder="Your email*"
+            autocomplete="off"
+          />
+          <p class="form-email-error">Invalid email, try again</p>
+          <textarea
+            placeholder="Message"
+            name="message"
+            style="height: 128px"
+          ></textarea>
+          <p class="form-msg-error">Please write something useful for us</p>
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
 <script type="module" src="./js/work-together.js"></script>
+
+<!-- Popup -->
+<div class="popup-overlay visually-hidden" id="popupOverlay"></div>
+<div class="popup visually-hidden" id="popup">
+  <div class="popup-content">
+    <svg
+      class="popup-close"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 32"
+      fill="none"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2.667"
+        d="M24 8 8 24M8 8l16 16"
+      />
+    </svg>
+    <h2 class="popup-title">OOPS! AN ERROR OCCURRED</h2>
+    <p class="popup-text">
+      Unfortunately, your message could not be sent right now. Please try again
+      later.
+    </p>
+  </div>
+</div>

@@ -1,0 +1,268 @@
+/*MOBILE*/
+.faq {
+  margin-top: 80px;
+}
+.faq-container {
+  min-width: 320px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+.faq-header {
+  width: 320px;
+  font-family: Impact;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.23;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+[data-theme='dark'] .faq-header {
+  color: var(--white-dt);
+}
+
+[data-theme='dark'] .faq-highlight {
+  color: var(--accet-green);
+}
+
+.faq-highlight {
+  color: var(--accet-green-dt);
+}
+
+.decor-background {
+  display: none;
+}
+/* accordion */
+.accordion-container {
+  margin-top: 40px;
+
+  /* max-width: 320px; */
+  height: auto;
+}
+
+.ac {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px;
+  align-items: flex-start;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid var(--light-grey);
+  background-color: white; /* Додаємо білий фон для неактивного стану */
+  outline: none;
+}
+[data-theme='dark'] .ac {
+  background-color: transparent; /* Видалив колір фону*/
+  border: none;
+  border-bottom: 1px solid var(--white-dt); /*нижній бордер*/
+}
+
+[data-theme='dark'] .ac.is-active {
+  background-color: transparent; /* Активний стан також не матиме фону */
+  border-radius: 16px;
+}
+
+/* */
+.ac-header {
+  display: flex;
+  width: 100%;
+
+  justify-content: flex-start;
+}
+
+.ac-trigger {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-right: 16px;
+  background-color: transparent;
+  text-transform: uppercase;
+  background: none;
+
+  font-family: Poppins, sans-serif;
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+[data-theme='dark'] .ac-trigger {
+  color: var(--white-dt);
+}
+
+.ac .ac-trigger::after {
+  content: '';
+  font-size: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/faq/icons/button-down.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(0)
+    contrast(100%);
+}
+
+[data-theme='dark'] .ac .ac-trigger::after {
+  filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(1.2)
+    contrast(100%);
+}
+
+.ac.is-active > .ac-header .ac-trigger::after {
+  content: '';
+  background-image: url('../images/faq/icons/button-up.svg');
+  filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(0)
+    contrast(100%);
+}
+[data-theme='dark'] .ac.is-active > .ac-header .ac-trigger::after {
+  content: '';
+  filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(1.2)
+    contrast(100%);
+}
+
+.faq-ac-text {
+  font-family: Poppins;
+  font-size: 16px;
+  text-align: start;
+  align-self: stretch;
+  color: var(--black);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+[data-theme='dark'] .faq-ac-text {
+  color: var(--white-dt);
+}
+
+.ac.is-active {
+  background-color: var(--light-accent, #bcdfd1);
+  border: 0;
+  border-radius: 16px; /* Залишаємо радіус лише для активного стану */
+}
+[data-theme='dark'] .ac.is-active {
+  background-color: var(--dark-accet-dt);
+  border-radius: 16px; /* Залишаємо радіус лише для активного стану */
+}
+
+.ac.is-active .ac-trigger {
+  color: var(--black);
+}
+[data-theme='dark'] .ac.is-active .ac-trigger {
+  color: var(--white-dt);
+}
+
+.ac-panel {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+  width: 100%;
+}
+
+.ac-panel > * {
+  padding-top: 12px;
+}
+
+/* */
+/* === ТЕМНА ТЕМА: всі НЕактивні заголовки білі === */
+[data-theme='dark'] section#faq .ac:not(.is-active) .ac-trigger {
+  /* специфічність: 0,4,0 (attribute + element#id + class + pseudo-class) */
+  color: var(--white-dt);
+}
+
+/* === Видаляємо рамки/обводки/тіні === */
+section#faq .ac-trigger {
+  border: 0; /* прибирає будь-які border */
+  background: none; /* прибирає background із кнопки */
+  outline: none; /* прибирає контур при фокусі */
+  box-shadow: none; /* прибирає тінь, якщо додається */
+}
+
+/* Для Firefox-специфіки: */
+section#faq .ac-trigger::-moz-focus-inner {
+  border: 0;
+}
+
+/* */
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  .faq {
+    margin-top: 124px;
+  }
+  .faq-container {
+    max-width: 768px;
+    height: 1120px;
+  }
+
+  .faq-header {
+    width: 592px;
+    height: 372px;
+    font-size: 108px;
+    line-height: 1.15;
+  }
+  /* accordion */
+  .accordion-container {
+    margin-top: 60px;
+    /* width: 704px; */
+    height: auto;
+  }
+
+  .ac {
+    width: 704px;
+  }
+}
+
+.ac-trigger {
+  /* max-width: 600px; */
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1280px) {
+  .faq {
+    margin-top: 164px;
+  }
+  .faq-container {
+    max-width: 1280px;
+    gap: 0;
+    flex-direction: raw;
+    flex-wrap: wrap;
+  }
+
+  .faq-header {
+    width: 520px;
+  }
+
+  .decor-background {
+    display: block;
+    margin-top: 240px;
+    width: 520.592px;
+    height: 406.244px;
+    flex-shrink: 0;
+    fill: var(--accet-green);
+    filter: blur(3.70084285736084px);
+  }
+
+  [data-theme='dark'] .decor-background {
+    fill: var(--accet-green-dt);
+  }
+  /* accordion */
+  .accordion-container {
+    margin-top: 276px;
+    height: auto;
+  }
+
+  .ac {
+    width: 688px;
+  }
+}

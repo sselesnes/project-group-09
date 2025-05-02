@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="icon-vector-work1" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.454" d="M1.818 8.364c0 12.049 9.769 21.818 21.818 21.818h3.273a3.272 3.272 0 0 0 3.273-3.273v-1.996c0-.751-.511-1.405-1.239-1.587l-6.433-1.609c-.64-.16-1.312.08-1.706.607l-1.411 1.881c-.41.547-1.119.788-1.76.553a17.502 17.502 0 0 1-10.39-10.39c-.236-.641.006-1.35.553-1.76l1.881-1.411a1.634 1.634 0 0 0 .607-1.706L8.675 3.058a1.633 1.633 0 0 0-1.587-1.24H5.092a3.272 3.272 0 0 0-3.273 3.273v3.273z"/>
+    </symbol>
+    <symbol id="icon-vector-work2" viewBox="0 0 38 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M34.8 4.4v16.8a3.602 3.602 0 0 1-3.6 3.6h-24a3.602 3.602 0 0 1-3.6-3.6V4.4m31.2 0A3.602 3.602 0 0 0 31.2.8h-24a3.602 3.602 0 0 0-3.6 3.6m31.2 0v.389a3.599 3.599 0 0 1-1.712 3.066l-12 7.384a3.597 3.597 0 0 1-3.776 0l-12-7.382A3.6 3.6 0 0 1 3.6 4.791v-.39"/>
+    </symbol>
+  </defs>
+</svg>

@@ -53,6 +53,22 @@
     overflow: hidden;
 }
 
+/* Decorative Background */
+.mobile-menu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/header/dekor.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    z-index: -1;
+    pointer-events: none;
+}
+
 /* Particles Container */
 #particles-js {
     position: absolute;
@@ -139,7 +155,7 @@
     transition: color 0.3s ease;
 }
 
-/* Menu Open State  прибрати скролл відкритому стані*/
+/* Menu Open State */
 body.menu-open {
     overflow: hidden;
     position: fixed;

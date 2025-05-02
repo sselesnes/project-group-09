@@ -13,6 +13,7 @@
 /* Sections style */
 @import url('./header.css');
 @import url('./hero.css');
+@import url('./about-me.css');
 @import url('./tech-skills.css');
 @import url('./my-projects.css');
 @import url('./benefits.css');
@@ -21,78 +22,3 @@
 @import url('./work-together.css');
 @import url('./footer.css');
 @import url('./modal.css');
-
-/* Змінні */
-:root {
-    /* Основні кольори */
-    --color-primary: #000000;
-    --color-accent: #00B068;
-    --color-white: #FFFFFF;
-    --color-background: #FFFFFF;
-    --color-text: #333333;
-    --color-card-bg: #F5F5F5;
-    --color-border: #e0e0e0;
-    
-    /* Кольори для перемикача теми */
-    --color-switch-bg: #E6E6E6;
-    --color-switch-dark: #2C2C2C;
-    --container-light-bg: #3D7EAE;
-    --container-night-bg: #1D1F2C;
-    
-    /* Розміри */
-    --header-height: 60px;
-    --header-height-tablet: 80px;
-    --container-padding: 32px;
-    
-    /* Анімації */
-    --transition: .5s cubic-bezier(0, -0.02, 0.4, 1.25);
-}
-
-/* Темна тема */
-[data-theme="dark"] {
-    --color-primary: #FFFFFF;
-    --color-background: #1a1a1a;
-    --color-text: #ffffff;
-    --color-card-bg: #2d2d2d;
-    --color-border: #404040;
-    --color-switch-bg: #2C2C2C;
-    --color-accent: #00B068;
-}
-
-/* Базові стилі */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--color-background);
-    color: var(--color-text);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Стилі для секцій */
-section {
-    background-color: var(--color-background);
-    color: var(--color-text);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Стилі для карток */
-.card {
-    background-color: var(--color-card-bg);
-    border: 1px solid var(--color-border);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-/* Стилі для тексту */
-h1, h2, h3, h4, h5, h6, p, span, a {
-    color: var(--color-text);
-    transition: color 0.3s ease;
-}
-
-/* Стилі для посилань */
-a {
-    color: var(--color-primary);
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--color-accent);
-}

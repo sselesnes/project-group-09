@@ -83,6 +83,7 @@ body {
 .header {
   position: fixed;
   top: 0;
+  /* left: -32px; */
   width: 100%;
   height: var(--header-height);
   background-color: var(--color-background);
@@ -97,7 +98,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  /* padding: 0 16px; */
+  /* max-width: 1280px; */
 }
 
 .header-left {
@@ -359,6 +361,7 @@ body {
 /* Медіа-запити */
 @media screen and (min-width: 768px) {
   .header {
+    /* left: -32px; */
     height: var(--header-height-tablet);
   }
   .logo {
@@ -366,6 +369,11 @@ body {
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 1.5px;
+  }
+
+  .header-container {
+    /* width: 768px;
+    padding: 0 32px; */
   }
 
   .nav {
@@ -395,7 +403,11 @@ body {
 
   .header-container {
     width: 1280px;
-  
+    /* padding: 0 100px; */
+  }
+
+  .logo {
+    /* font-size: 24px; */
   }
 
   .nav-wrapper {
@@ -419,6 +431,7 @@ body {
   .header-container {
     width: 100%;
     max-width: 360px;
+    /* padding: 0 16px; */
   }
 
   .header {

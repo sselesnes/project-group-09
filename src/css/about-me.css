@@ -1,3 +1,284 @@
+/* ---------- Мобилка ---------- */
+.about-me {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-me_title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.24;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text-markup);
+}
 .about-me_title span {
-    color: var(--color-accet-markup);
-} 
+  color: var(--color-accet-markup);
+}
+
+.about-me_info {
+  margin-top: 40px;
+}
+
+.about-me_img {
+  border-radius: 16px;
+  width: 320px;
+  height: 374px;
+}
+
+.about-me_info-biography {
+  margin-top: 40px;
+}
+
+.about-me_info-biography-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-markup);
+}
+
+.about-me_info-biography-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--color-text-markup);
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.about-me_info-biography-text:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bulleted_list {
+  position: relative;
+}
+
+.bulleted_list::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  border-radius: 1px;
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-accet-markup);
+  mask-image: url(/images/about-me/about-me_rectangle_x.svg);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  -webkit-mask-image: url(/images/about-me/about-me_rectangle_x.svg);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+}
+
+.about-me_info-education {
+  margin-top: 40px;
+}
+
+.about-me_info-education-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-markup);
+  margin-bottom: 32px;
+}
+
+.about-me_info-education-list {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--color-text-markup);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 32px;
+}
+
+.about-me_info-education-list-item::before {
+  left: -18px;
+}
+
+.about-me_info-role {
+  margin-top: 40px;
+}
+
+.about-me_info-role-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-markup);
+  margin-bottom: 32px;
+}
+
+.about-me_info-role-list {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--color-text-markup);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 24px;
+}
+
+.about-me_info-role-list-item::before {
+  left: -14px;
+}
+
+/* ---------- Планшет ---------- */
+@media only screen and (min-width: 768px) {
+  .about-me {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
+
+  .about-me_title {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
+
+  .about-me_info {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 32px;
+  }
+
+  .about-me_img {
+    width: 336px;
+    height: 392px;
+    margin-top: 368px;
+  }
+
+  .about-me_info-biography {
+    width: 336px;
+    height: 680px;
+    margin-top: 0;
+    position: relative;
+  }
+
+  .about-me_info-biography::before {
+    content: '';
+    position: absolute;
+    width: 336px;
+    height: 252px;
+    top: 100%;
+    right: 0;
+    transform: translateY(12px);
+    background-color: var(--color-accet-markup);
+    mask-image: url(/images/about-me/about-me_bg.svg);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    -webkit-mask-image: url(/images/about-me/about-me_bg.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    z-index: -1;
+  }
+
+  .about-me_info-biography-title {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+
+  .about-me_info-education {
+    width: 336px;
+    height: 280px;
+    margin-top: 0;
+  }
+
+  .about-me_info-education-title {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+
+  .about-me_info-education-list {
+    gap: 16px;
+  }
+
+  .about-me_info-role {
+    width: 336px;
+    height: 184px;
+    margin-top: 0;
+  }
+
+  .about-me_info-role-title {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+
+  .about-me_info-role-list {
+    gap: 16px;
+  }
+}
+
+/* ---------- Десктоп ---------- */
+@media only screen and (min-width: 1280px) {
+  .about-me {
+    padding-top: 164px;
+    padding-bottom: 164px;
+  }
+
+  .about-me_info {
+    row-gap: 80px;
+    column-gap: 136px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: row;
+    justify-content: end;
+  }
+
+  .about-me_img {
+    width: 384px;
+    height: 448px;
+    margin-top: 272px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .about-me_info-biography {
+    width: 488px;
+    height: 488px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .about-me_info-biography::before {
+    width: 380px;
+    height: 260px;
+    transform: translateY(38px);
+  }
+
+  .about-me_info-education {
+    width: 384px;
+    height: 280px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .about-me_info-role {
+    width: 384px;
+    height: 184px;
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
