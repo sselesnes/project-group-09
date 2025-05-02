@@ -139,7 +139,7 @@
     transition: color 0.3s ease;
 }
 
-/* Menu Open State */
+/* Menu Open State  прибрати скролл відкритому стані*/
 body.menu-open {
     overflow: hidden;
     position: fixed;
